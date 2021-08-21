@@ -109,7 +109,16 @@ fieldset {
   min-height: 820px;
   margin: 0 -30px;
   padding: 30px;
-  background: url("../img/phones.jpg") no-repeat bottom;
+  background-image: -webkit-image-set(
+    url("../img/phones-2x.webp") 2x,
+    url("../img/phones.webp") 1x
+  );
+  background-image: image-set(
+    url("../img/phones-2x.webp") type("image/webp") 2x,
+    url("../img/phones.webp") type("image/webp") 1x
+  );
+  background-repeat: no-repeat;
+  background-position: bottom;
   background-size: 1290px;
 }
 
@@ -160,7 +169,14 @@ fieldset {
 
   .offer__container {
     min-height: 720px;
-    background-image: url(../img/phones-800.jpg);
+    background-image: -webkit-image-set(
+      url("../img/phones-800-2x.webp") 2x,
+      url("../img/phones-800.webp") 1x
+    );
+    background-image: image-set(
+      url("../img/phones-800-2x.webp") type("image/webp") 2x,
+      url("../img/phones-800.webp") type("image/webp") 1x
+    );
     background-size: 800px;
   }
 
@@ -179,14 +195,21 @@ fieldset {
 
 @media (max-width: 440px) {
   .offer__container {
-    background-image: url(../img/phones-mob.jpg);
+    background-image: -webkit-image-set(
+      url("../img/phones-mob-2x.webp") 2x,
+      url("../img/phones-mob.webp") 1x
+    );
+    background-image: image-set(
+      url("../img/phones-mob-2x.webp") type("image/webp") 2x,
+      url("../img/phones-mob.webp") type("image/webp") 1x
+    );
     background-size: 400px;
   }
 }
 
 /* Медиа для retina дисплея */
 
-@media (min-resolution: 2dppx) {
+/* @media (min-resolution: 2dppx) {
   .offer__container {
     background-image: url(../img/phones-2x.jpg);
   }
@@ -202,4 +225,4 @@ fieldset {
   .offer__container {
     background-image: url(../img/phones-mob-2x.jpg);
   }
-}
+} */
