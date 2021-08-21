@@ -44,3 +44,71 @@ figure,
 fieldset {
   margin: 0;
 }
+
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.main__section {
+  padding: 70px 0;
+}
+
+.header {
+  padding: 30px 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  height: 40px;
+}
+
+.navigation {
+  font-weight: 400;
+}
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation__item {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__item:not(:last-child):after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 40px;
+  margin: 0 25px;
+  background-color: #c9c9c9;
+}
+
+@media (max-width: 800px) {
+  .navigation {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .navigation__list {
+    display: block;
+  }
+
+  .navigation__item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  .navigation__item:not(:last-child):after {
+    content: "";
+    display: none;
+  }
+}
