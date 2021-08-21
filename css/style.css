@@ -144,6 +144,47 @@ fieldset {
   line-height: 23px;
 }
 
+.features__title {
+  margin-bottom: 80px;
+  font-size: 34px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 60px 30px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 410px;
+  text-align: center;
+}
+
+.card__picture {
+  margin-bottom: 35px;
+  border-radius: 34px;
+  box-shadow: 0px 10px 40px 10px rgba(0, 0, 0, 0.06);
+}
+
+.card__title {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.card__description {
+  max-width: 300px;
+  font-size: 22px;
+  line-height: 26px;
+}
+
 @media (max-width: 800px) {
   .navigation {
     font-size: 16px;
@@ -191,6 +232,10 @@ fieldset {
   .offer__price {
     font-size: 18px;
   }
+
+  .features__title {
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 440px) {
@@ -204,6 +249,14 @@ fieldset {
       url("../img/phones-mob.webp") type("image/webp") 1x
     );
     background-size: 400px;
+  }
+
+  .card__title {
+    font-size: 16px;
+  }
+
+  .card__description {
+    font-size: 18px;
   }
 }
 
