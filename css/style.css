@@ -199,6 +199,7 @@ fieldset {
   justify-content: center;
   flex-wrap: wrap;
   gap: 60px 30px;
+  margin-bottom: 90px;
 }
 
 .form__box {
@@ -236,6 +237,71 @@ fieldset {
 
 .form__input:last-child {
   margin-bottom: 0;
+}
+
+.form__submit {
+  display: block;
+  margin: 0 auto;
+}
+
+.checkbox {
+  position: relative;
+  display: block;
+  margin-bottom: 26px;
+  padding-left: 70px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.checkbox__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.checkbox__input:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.checkbox__input:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 11px;
+  display: block;
+  width: 17px;
+  height: 8px;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transform: rotate(-45deg);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.checkbox__input:checked:after {
+  opacity: 1;
+}
+
+.checkbox__input:focus:before,
+.checkbox__input:hover:not(:disabled):before {
+  box-shadow: 0px 0px 10px rgba(0, 113, 227, 0.5);
+}
+
+.checkbox__input:disabled:before {
+  background-color: #c9c9c9;
 }
 
 @media (max-width: 800px) {
