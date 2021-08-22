@@ -367,6 +367,24 @@ fieldset {
   margin-top: -5px;
 }
 
+.footer {
+  padding: 30px;
+  background-color: #c9c9c9;
+}
+
+.footer__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.footer__creator {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
 @media (max-width: 800px) {
   .navigation {
     font-size: 16px;
@@ -449,6 +467,15 @@ fieldset {
     padding: 10px;
     font-size: 16px;
   }
+
+  .footer__flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__creator {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 440px) {
@@ -470,6 +497,10 @@ fieldset {
 
   .card__description {
     font-size: 18px;
+  }
+
+  .footer__creator {
+    font-size: 16px;
   }
 }
 
